@@ -11,7 +11,13 @@ typedef unsigned short      u16;
 typedef unsigned long       u32;
 typedef unsigned long long  u64;
 
+#ifdef _WINDOWS_
 #define DECLEXPORT	__declspec(dllexport)
 #define DALLASLIB	__stdcall
+#else
+#define DECLEXPORT
+#define DALLASLIB
+#endif
+
 
 #endif
