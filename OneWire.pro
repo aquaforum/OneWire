@@ -20,7 +20,8 @@ SOURCES += src/dallas/crc.c \
            src/dallas/delay.c \
            src/dallas/ds18x20.c \
            src/dallas/ds2408.c \
-           src/dallas/ds2450.c
+           src/dallas/ds2450.c \
+    onewire.cpp
 
 MOC_DIR = build
 OBJECTS_DIR = build

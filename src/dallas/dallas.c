@@ -123,7 +123,7 @@ static BOOL dallasWriteData(u08 * buffer, u08 buffer_size)
     return TRUE;
 }
 
-u08 dallasInit(char *PortName)
+u08 DALLASLIB dallasInit(char *PortName)
 {
     fd = open(PortName, O_RDWR | O_NOCTTY | O_NDELAY);
     CHECK_TRUE(

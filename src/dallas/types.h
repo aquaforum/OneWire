@@ -16,7 +16,7 @@ typedef unsigned long long  u64;
 #define DALLASLIB	__stdcall
 #else
 #define DECLEXPORT
-#define DALLASLIB
+#define DALLASLIB  __attribute__((stdcall))
 #endif
 
 
